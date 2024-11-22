@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.map {
+  margin:0px;
+  width: 4096px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+
+}
+
+.map img {
+  max-width:100%;
+  display: block;
+}
+
+.pin_claim {
+  width:20px;
+  height:20px;
+  background-image:   url(pin.png);
+  transform:translate(-50%,-100%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.pin_waystone {
+  width:20px;
+  height:20px;
+  background-image:   url(pin_waystone.png);
+  transform:translate(-50%,-100%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.pin_claim:hover > .pin-text {
+  display: block;
+}
+.pin_waystone:hover > .pin-text {
+  display: block;
+}
+
+.pin-text {
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text-perm {
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  white-space:nowrap;
+  display: block;
+}
+
+.pin-text h3 {
+    color:Black;
+    background-color: white;
+    /*text-shadow: 1px 1px 1px #000;*/
+}
+
+.pin-text-perm h3 {
+  color:Black;
+  background-color: white;
+  /*text-shadow: 1px 1px 1px #000;*/
+}
